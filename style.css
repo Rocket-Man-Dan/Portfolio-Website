@@ -25,7 +25,7 @@
 /* ∷∷∷∷∷∷∷∷ Variables ∷∷∷∷∷∷∷∷ */
 @font-face {
     font-family: 'Poppins', sans-serif;
-    src: url('/fonts/Poppins-Regular.ttf');
+    src: url('./fonts/Poppins-Regular.ttf');
 }
 
 :root {
@@ -111,7 +111,7 @@ cursor: pointer;
     height: 6vh;
     top: 1vh;
     position: absolute;
-    background-image: url(/img/icons/icon_mobile_nav_btn_white.svg);
+    background-image: url(./img/icons/icon_mobile_nav_btn_white.svg);
     background-size: 60%;
     background-repeat: no-repeat;
     background-position: center;
@@ -123,7 +123,7 @@ cursor: pointer;
 
 #mobile-nav:checked ~ * .btn-burger {
     transform: scale(1.5) rotate(180deg) translateY(-1vh);
-    background-image: url(/img/icons/icon_mobile_nav_btn.svg);
+    background-image: url(./img/icons/icon_mobile_nav_btn.svg);
     box-shadow: inset 0vh 0vh 1vh rgba(0, 0, 0, 0);
 }
 
@@ -294,7 +294,7 @@ cursor: pointer;
 
 .hero-links > a {
     transition: all ease-in-out 200ms;
-    background-image: url(/img/icons/icon_linkedin.png);
+    background-image: url(./img/icons/icon_linkedin.png);
     background-size: 5vh;
     background-repeat: no-repeat;
     margin: 1vh 1.5vh;
@@ -303,26 +303,26 @@ cursor: pointer;
 }
 
 .hero-links > a:nth-child(2) {
-    background-image: url(/img/icons/icon_git.png);
+    background-image: url(./img/icons/icon_git.png);
 }
 
 .hero-links > a:nth-child(3) {
-    background-image: url(/img/icons/icon_cv.png);
+    background-image: url(./img/icons/icon_cv.png);
     background-size: 3.8vh;
 }
 
 .hero-links > a:hover {
     transition: all ease-in-out 200ms;
     transform: scale(1.2);
-    background-image: url(/img/icons/icon_linkedin_alt.png);
+    background-image: url(./img/icons/icon_linkedin_alt.png);
 }
 
 .hero-links > a:nth-child(2):hover {
-    background-image: url(/img/icons/icon_git_alt.png);
+    background-image: url(./img/icons/icon_git_alt.png);
 }
 
 .hero-links > a:nth-child(3):hover {
-    background-image: url(/img/icons/icon_cv_alt.png);
+    background-image: url(./img/icons/icon_cv_alt.png);
     background-size: 3.8vh;
 }
 
@@ -685,7 +685,7 @@ span {
 @media screen and (max-aspect-ratio: 1/1) {
     @font-face {
         font-family: 'Poppins';
-        src: url(/fonts/Poppins-Regular.ttf);
+        src: url(./fonts/Poppins-Regular.ttf);
         font-weight: normal;
         font-style: normal;
     }
