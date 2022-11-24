@@ -357,13 +357,9 @@ cursor: pointer;
     align-items: left;
     justify-content: center;
     padding-bottom: 10vh;
-    margin-left: 15vw;
+    margin-left: 30vw;
     width: 40vw;
 
-}
-
-.about > h2 {
-    
 }
 
 @media screen and (max-aspect-ratio: 1/1) {
@@ -374,6 +370,7 @@ cursor: pointer;
     .section.about {
         width: 70vw;
         scroll-margin: 10vh;
+        margin-left: 15vw;
     }
 
     .section.projects {
@@ -401,7 +398,12 @@ cursor: pointer;
     /* outline: .25vh solid red; */
 }
 
-.section.projects > article {
+.section > h2 {
+    color: rgb(var(--color-green));
+    text-align: center;
+}
+
+.section.projects > article, .section.tech > article {
     margin-top: -5vh;
 }
 
@@ -428,14 +430,14 @@ cursor: pointer;
     position: relative;
     width: 37vh;
     height: 30vh;
-    margin: 5vh;
+    margin: 15vh 10vh;
     background-color: rgb(var(--color-green));
     /* box-shadow: 0vh 0vh 1vh black; */
     background-image:
     linear-gradient(to bottom,
     rgb(var(--color-light-blue)),
     rgb(var(--color-green)));
-    
+    transform: scale(1.25);
 }
 
 .screenshot {
@@ -573,6 +575,10 @@ cursor: pointer;
 
 @media screen and (max-aspect-ratio: 1/1) {
 
+    .grid-item {
+        margin: 7vh 5vh;
+    }
+
     .screenshot-image {
         height: 100%;
     }
@@ -667,7 +673,7 @@ h4 {
 
 p {
     font-size: 2vh;
-    color: rgb(var(--color-text-white));
+    color: rgb(var(--color-text-med));
 }
 
 li {
