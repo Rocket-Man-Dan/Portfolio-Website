@@ -674,6 +674,18 @@ span {
     color: rgb(var(--color-text-white));
 }
 
+:root::-webkit-scrollbar {
+    width: 1.5vh;
+}
+
+:root::-webkit-scrollbar-thumb {
+background: linear-gradient(to top,
+            rgb(var(--color-light-blue)) -10%,
+            rgb(var(--color-green)) 140% );
+/* outline: 1px solid var(--heading-color-light); */
+border-radius: 1rem;
+}
+
 /* ☏ HTML Tags ☏ */
 @media screen and (max-aspect-ratio: 1200/920) {
     @font-face {
