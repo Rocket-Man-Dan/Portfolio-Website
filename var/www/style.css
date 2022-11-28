@@ -1,20 +1,33 @@
-/* ∷    ⋯   ⋮   ∎ */
-/* ➊➋➌➍➎➏➐➑➒➓➀➁➂➃➄➅➆➇➈➉ */
 
 /* ⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮ TABLE OF CONTENTS ⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮ */
     /* ∷∷∷∷∷∷∷∷ Variables ∷∷∷∷∷∷∷∷ */
-        /* ⋯⋯⋯ text ⋯⋯ */
-        /* ⋯⋯⋯ gradients ⋯⋯ */
-        /* ⋯⋯⋯ background color ⋯⋯ */
-        /* ⋯⋯⋯ Fonts ⋯⋯ */
-        /* ⋯⋯⋯ Border ⋯⋯ */
-    
+        /* ⋯⋯⋯ text ⋯⋯⋯ */
+        /* ⋯⋯⋯ gradients ⋯⋯⋯ */
+        /* ⋯⋯⋯ background color ⋯⋯⋯ */
+        /* ⋯⋯⋯ Fonts ⋯⋯⋯ */
+        /* ⋯⋯⋯ Border ⋯⋯⋯ */
     /* ∷∷∷∷∷∷∷∷ Buttons ∷∷∷∷∷∷∷∷ */
+        /* ⋯⋯⋯ Button Default ⋯⋯⋯ */
+        /* ⋯⋯⋯ Header Buttons ⋯⋯⋯ */
+        /* ⋯⋯⋯ ☏ Buttons ☏ ⋯⋯⋯ */
     /* ∷∷∷∷∷∷∷∷ Header ∷∷∷∷∷∷∷∷ */
+        /* ⋯⋯⋯ ☏ Header ☏ ⋯⋯⋯ */
+        /* ⋯⋯⋯ Hero ⋯⋯⋯ */
+        /* ⋯⋯⋯ ☏ Hero ☏ ⋯⋯⋯ */
     /* ∷∷∷∷∷∷∷∷ Sections ∷∷∷∷∷∷∷∷ */
+        /* ⋯⋯⋯ About ⋯⋯⋯ */
+        /* ⋯⋯⋯ ☏ About ☏ ⋯⋯⋯ */
+        /* ⋯⋯⋯ Projects ⋯⋯⋯ */
+        /* ⋯⋯⋯ ☏ Projects ☏ ⋯⋯⋯ */
+        /* ⋯⋯⋯ Tech ⋯⋯⋯ */
+        /* ⋯⋯⋯ ☏ Tech ☏ ⋯⋯⋯ */
     /* ∷∷∷∷∷∷∷∷ Footer ∷∷∷∷∷∷∷∷ */
     /* ∷∷∷∷∷∷∷∷ HTML Tags ∷∷∷∷∷∷∷∷ */
+        /* ⋯⋯⋯ ☏ HTML Tags ☏ ⋯⋯⋯ */
     /* ∷∷∷∷∷∷∷∷ JS DOM ∷∷∷∷∷∷∷∷ */
+        /* ⋯⋯⋯ Scroll Up Header ⋯⋯⋯ */
+        /* ⋯⋯⋯ Projects Card Hover ⋯⋯⋯ */
+        /* ⋯⋯⋯ ☏ JS DOM ☏ ⋯⋯⋯ */
 /* ⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮ TABLE OF CONTENTS ⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮⋮ */
 
 /* ∎ DEBUG ∎ */
@@ -29,29 +42,30 @@
 }
 
 :root {
-    /* ⋯⋯⋯ text ⋯⋯ */
+    /* ⋯⋯⋯ text ⋯⋯⋯ */
     --color-text-white: 255, 255, 255;
     --color-text-med: 169, 173, 155;
     --color-text-dark: 35, 31, 32;
 
-    /* ⋯⋯⋯ gradients ⋯⋯ */
+    /* ⋯⋯⋯ gradients ⋯⋯⋯ */
     --color-green: 181, 242, 0;
     --color-light-blue: 0, 228, 255;
     --color-dark-blue: 0, 157, 209;
 
-    /* ⋯⋯⋯ background color ⋯⋯ */
+    /* ⋯⋯⋯ background color ⋯⋯⋯ */
     --color-bg-dark: 35, 31, 32;
 
-    /* ⋯⋯⋯ Fonts ⋯⋯ */
+    /* ⋯⋯⋯ Fonts ⋯⋯⋯ */
     font-family: 'Poppins';
 
-    /* ⋯⋯⋯ Border ⋯⋯ */
+    /* ⋯⋯⋯ Border ⋯⋯⋯ */
     --border-rad-small: 1vh;
     --border-rad-med: 1.25vh;
     --border-rad-max: 5vh;
 }
 
 /* ∷∷∷∷∷∷∷∷ Buttons ∷∷∷∷∷∷∷∷ */
+/* ⋯⋯⋯ Button Default ⋯⋯⋯ */
 .btn {
     transition: all 300ms;
     display: flex;
@@ -68,14 +82,12 @@
     box-shadow:
     0 0 0 .1vh rgb(var(--color-bg-dark)),
     0 0 0 .5vh rgb(var(--color-bg-dark));
-color: rgb(var(--color-text-white));
-cursor: pointer;
+    color: rgb(var(--color-text-white));
+    cursor: pointer;
 }
 
 .btn:hover {
     transition: all 300ms;
-    /* padding: .25vh .5vh; */
-    /* background-color: var(--color-green); */
     border-radius: var(--border-rad-max);
     box-shadow:
         0 0 0 .1vh rgb(var(--color-bg-dark)),
@@ -83,6 +95,7 @@ cursor: pointer;
     color: rgb(var(--color-text-white));
 }
 
+/* ⋯⋯⋯ Header Buttons ⋯⋯⋯ */
 .home {
     position: absolute;
     left: 15vw;
@@ -119,6 +132,7 @@ cursor: pointer;
     border-radius: var(--border-rad-small);
     box-shadow: inset 0vh 0vh 1vh rgb(0, 0, 0);
     pointer-events: all;
+    cursor: pointer;
 }
 
 #mobile-nav:checked ~ * .btn-burger {
@@ -135,7 +149,8 @@ cursor: pointer;
     pointer-events: all;
 }
 
-@media screen and (max-aspect-ratio: 1/1) {
+/* ☏ Buttons ☏ */
+@media screen and (max-aspect-ratio: 1200/920) {
     .home {display: none;
         font-size: 3vh;
         left: 2.5vw;
@@ -157,7 +172,6 @@ cursor: pointer;
     .desktop {
         display: none;
     }
-
 }
 
 /* ∷∷∷∷∷∷∷∷ Header ∷∷∷∷∷∷∷∷ */
@@ -243,18 +257,17 @@ cursor: pointer;
     pointer-events: none;
 }
 
-@media screen and (max-aspect-ratio: 1/1) {
-
+/* ☏ Header ☏ */
+@media screen and (max-aspect-ratio: 1200/920) {
     .btn-container {
         display: none;
     }
     .mobile-nav-container {
         display: flex;
     }
-
 }
 
-/* ∷∷∷∷∷∷∷∷ Sections ∷∷∷∷∷∷∷∷ */
+/* ⋯⋯⋯ Hero ⋯⋯⋯ */
 .hero {
     z-index: 12;
     display: flex;
@@ -331,14 +344,15 @@ cursor: pointer;
     width: 5vh;
 }
 
-@media screen and (max-aspect-ratio: 1/1) {
+/* ☏ Hero ☏ */
+@media screen and (max-aspect-ratio: 1200/920) {
     .hero-links {
         margin-left: -12vh;
     }
 }
 
-/* about */
-
+/* ∷∷∷∷∷∷∷∷ Sections ∷∷∷∷∷∷∷∷ */
+/* ⋯⋯⋯ About ⋯⋯⋯ */
 .section {
     display: flex;
     flex-direction: column;
@@ -348,7 +362,6 @@ cursor: pointer;
     margin-left: 15vw;
     width: 40vw;
     scroll-margin: 24vh;
-    
 }
 
 .section.about {
@@ -359,10 +372,10 @@ cursor: pointer;
     padding-bottom: 10vh;
     margin-left: 30vw;
     width: 40vw;
-
 }
 
-@media screen and (max-aspect-ratio: 1/1) {
+/* ☏ About ☏ */
+@media screen and (max-aspect-ratio: 1200/920) {
     .section {
         
     }
@@ -382,8 +395,7 @@ cursor: pointer;
     }
 }
 
-/* projects */
-
+/* ⋯⋯⋯ Projects ⋯⋯⋯ */
 .section.projects {
     z-index: 0;
     display: flex;
@@ -395,7 +407,6 @@ cursor: pointer;
     margin: 0;
     overflow: hidden;
     white-space: nowrap;
-    /* outline: .25vh solid red; */
 }
 
 .section > h2 {
@@ -415,10 +426,8 @@ cursor: pointer;
     position: relative;
     margin: 1vh;
     width: 80vw;
-    /* border: .25vh solid red; */
     overflow: hidden;
     white-space: nowrap;
-    /* outline: .25vh solid red; */
 }
 
 .grid-item {
@@ -432,7 +441,6 @@ cursor: pointer;
     height: 30vh;
     margin: 15vh 10vh;
     background-color: rgb(var(--color-green));
-    /* box-shadow: 0vh 0vh 1vh black; */
     background-image:
     linear-gradient(to bottom,
     rgb(var(--color-light-blue)),
@@ -447,7 +455,6 @@ cursor: pointer;
     width: 100%;
     height: 100%;
     opacity: 100%;
-    /* background-image: url(/img/screenshots/test.png); */
     background-size: 40vh;
     background-repeat: no-repeat;
     box-shadow: 0vh -3vh 1vh 3.5vh rgb(var(--color-bg-dark), .75);
@@ -468,10 +475,6 @@ cursor: pointer;
     linear-gradient(to bottom,
     rgb(var(--color-light-blue), .12),
     rgb(var(--color-green), .12));
-}
-
-.screenshot-color.hover {
-    bottom: 0vh;
 }
 
 .screenshot-image {
@@ -503,32 +506,16 @@ cursor: pointer;
     left: 0;
     right: 0;
 }
-.project-title.hover {
-    transition: all ease-out 200ms;
-    display: flex;
-    position: absolute;
-    margin: 1vh;
-    transform: translateY(-10vh);
-}
+
 .project-desc {
     transition: all ease-out 200ms;
     display: flex;
     position: absolute;
-    transform: translateY(10vh);
-    
-    bottom: -10vh;
-    margin: 1vh;
-}
-.project-desc.hover {
-    transition: all ease-out 200ms;
-    display: flex;
-    position: absolute;
     bottom: 0;
-    height: 6vh;
-    width: 90%;
+    margin: auto 5vh;
     white-space: normal;
-    transform: translateY(-2vh);
-    margin: 1vh;
+    transform: translateY(12vh);
+    
 }
 
 .live-btn {
@@ -544,7 +531,6 @@ cursor: pointer;
     clip-path: inset(-.05vh -.05vh -4vh -.05vh);
     cursor: pointer;
 }
-
 
 .live-btn:hover {
     background-color: rgb(var(--color-dark-blue), 1);
@@ -573,7 +559,8 @@ cursor: pointer;
     
 }
 
-@media screen and (max-aspect-ratio: 1/1) {
+/* ☏ Projects ☏ */
+@media screen and (max-aspect-ratio: 1200/920) {
 
     .grid-item {
         margin: 7vh 5vh;
@@ -585,8 +572,7 @@ cursor: pointer;
 
 }
 
-/* tech */
-
+/* ⋯⋯⋯ Tech ⋯⋯⋯ */
 .section.tech {
     display: flex;
     align-items: center;
@@ -603,16 +589,16 @@ cursor: pointer;
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 50%;
+    width: 60%;
 }
 
 .tech-container > img {
-    margin: 4vh;
-    width: 12vh;
+    margin: 3vh;
+    width: 16vh;
 }
 
-@media screen and (max-aspect-ratio: 1/1) {
-
+/* ☏ Tech ☏ */
+@media screen and (max-aspect-ratio: 1200/920) {
     .tech-container {
         display: flex;
         flex-wrap: wrap;
@@ -621,14 +607,16 @@ cursor: pointer;
         position: relative;
         width: 80%;
         scroll-margin: 10vh;
+        margin-top: 5vh;
     }
 
     .tech-container > img {
-        margin: 2vh;
-        width: 8vh;
+        margin: 1vh;
+        width: 10vh;
     }
 
 }
+
 /* ∷∷∷∷∷∷∷∷ Footer ∷∷∷∷∷∷∷∷ */
 /* ∷∷∷∷∷∷∷∷ HTML Tags ∷∷∷∷∷∷∷∷ */
 body {
@@ -686,9 +674,8 @@ span {
     color: rgb(var(--color-text-white));
 }
 
-
-
-@media screen and (max-aspect-ratio: 1/1) {
+/* ☏ HTML Tags ☏ */
+@media screen and (max-aspect-ratio: 1200/920) {
     @font-face {
         font-family: 'Poppins';
         src: url(./fonts/Poppins-Regular.ttf);
@@ -698,6 +685,7 @@ span {
 }
 
 /* ∷∷∷∷∷∷∷∷ JS DOM ∷∷∷∷∷∷∷∷ */
+/* ⋯⋯⋯ Scroll Up Header ⋯⋯⋯ */
 .nav-container.scroll {
     transition: all ease-in 400ms;
     height: 7vh;
@@ -721,7 +709,34 @@ span {
     transform: translateY(-60vh);
 }
 
-@media screen and (max-aspect-ratio: 1/1) {
+/* ⋯⋯⋯ Projects Card Hover ⋯⋯⋯ */
+.screenshot-color.hover {
+    bottom: 0vh;
+}
+.project-title.hover {
+    transition: all ease-out 200ms;
+    display: flex;
+    position: absolute;
+    margin: 1vh;
+    transform: translateY(-10vh);
+}
+.projects-popup.hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project-desc.hover {
+    transition: all ease-out 200ms;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    margin: auto 5vh;
+    white-space: normal;
+    transform: translateY(-2vh);
+}
+
+/* ☏ JS DOM ☏ */
+@media screen and (max-aspect-ratio: 1200/920) {
     .nav-container.scroll.scroll {
         height: 10vh;
     }

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 153.44 153.44">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: blue;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        opacity: .5;
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient-6);
+      }
+
+      .cls-5 {
+        opacity: 0;
+      }
+
+      .cls-6 {
+        fill: url(#linear-gradient-11);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-7 {
+        fill: url(#linear-gradient-10);
+      }
+
+      .cls-8 {
+        opacity: .75;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-9 {
+        fill: url(#linear-gradient-5);
+      }
+
+      .cls-10 {
+        fill: url(#linear-gradient-7);
+      }
+
+      .cls-11 {
+        fill: url(#linear-gradient-9);
+      }
+
+      .cls-12 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-13 {
+        fill: url(#linear-gradient-4);
+      }
+
+      .cls-14 {
+        fill: url(#linear-gradient-8);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="76.72" y1="145.04" x2="76.72" y2="35.26" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b5f200"/>
+      <stop offset="1" stop-color="#00aaca"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="96.51" y1="265.27" x2="96.51" y2="-25.65" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="84.16" y1="265.27" x2="84.16" y2="-25.65" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="46.3" y1="-4.83" x2="46.3" y2="22.55" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-5" x1="66.46" y1="-4.83" x2="66.46" y2="22.55" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-6" x1="88.03" y1="-4.83" x2="88.03" y2="22.55" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-7" x1="108.88" y1="-4.83" x2="108.88" y2="22.55" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-8" x1="94.14" y1="73.77" x2="26.26" y2="73.77" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-9" x1="94.14" y1="111.12" x2="26.26" y2="111.12" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-10" x1="99.03" y1="102.02" x2="42.84" y2="102.02" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-11" x1="99.03" y1="61.51" x2="42.84" y2="61.51" xlink:href="#linear-gradient"/>
+  </defs>
+  <g>
+    <path class="cls-12" d="M121.84,38.26l-8.35,93.46-36.83,10.21-36.73-10.2L31.6,38.26H121.84m3.28-3H28.32l8.81,98.81,39.53,10.98,39.64-10.99,8.82-98.8h0Z"/>
+    <polygon class="cls-3" points="116.29 43.34 108.75 127.76 76.72 136.64 76.72 124.07 101.52 117.18 101.71 115.14 104.55 83.23 104.85 79.98 76.72 79.98 76.72 67.57 105.95 67.57 106.19 64.84 106.75 58.7 107.04 55.45 76.72 55.45 76.72 43.34 116.29 43.34"/>
+    <polygon class="cls-2" points="91.6 92.1 90.2 107.82 76.72 111.46 76.72 92.1 91.6 92.1"/>
+    <path id="path3036" class="cls-13" d="M37.33,8.4h6.16v6.08h5.63v-6.08h6.16V26.83h-6.16v-6.17h-5.63v6.17h-6.16V8.4h0Z"/>
+    <path id="path3038" class="cls-9" d="M63.38,14.51h-5.42v-6.11h17v6.11h-5.42v12.32h-6.16V14.51h0Z"/>
+    <path id="path3040" class="cls-4" d="M77.66,8.4h6.42l3.95,6.47,3.95-6.47h6.42V26.83h-6.13v-9.13l-4.24,6.55h-.11l-4.24-6.55v9.13h-6.03V8.4h0Z"/>
+    <path id="path3042" class="cls-10" d="M101.47,8.4h6.16v12.34h8.66v6.09h-14.82V8.4Z"/>
+    <g>
+      <g class="cls-8">
+        <polygon class="cls-14" points="76.68 67.57 59.58 67.57 60.68 79.98 76.68 79.98 76.68 92.1 49.6 92.1 46.63 58.7 46.33 55.45 76.68 55.45 76.68 67.57"/>
+        <polygon class="cls-11" points="76.68 111.47 76.68 124.07 76.66 124.07 51.84 117.18 50.15 98.16 62.31 98.16 63.17 107.83 76.66 111.47 76.68 111.47"/>
+      </g>
+      <polygon class="cls-7" points="104.85 79.98 104.55 83.23 101.71 115.14 101.52 117.18 76.72 124.07 76.72 111.46 90.2 107.82 91.6 92.1 76.72 92.1 76.72 79.98 104.85 79.98"/>
+      <polygon class="cls-6" points="107.04 55.45 106.75 58.7 106.19 64.84 105.95 67.57 76.72 67.57 76.72 55.45 107.04 55.45"/>
+    </g>
+  </g>
+  <g class="cls-5">
+    <path class="cls-1" d="M0,0V153.44H153.44V0H0ZM145.04,145.04H8.4V8.4H145.04V145.04Z"/>
+  </g>
+</svg>
