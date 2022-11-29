@@ -32,22 +32,27 @@
     <nav class="mobile-nav-container">
       <button class="btn mobile" onclick="scrollToHome()" style="border: none;">Home</button>
       <button class="btn mobile" onclick="location.href='https://dan-s.dev';" style="border: none;">Web<br> Design</button>
-      <button class="btn mobile" onclick="scrollToAbout()" style="border: none;">About Me</button>
-      <button class="btn mobile" onclick="scrollToProjects()" style="border: none;" >Projects</button>
-      <button class="btn mobile" onclick="scrollToTech()" style="border: none;">Tech</button>
+      <button class="btn mobile" onclick="scrollToInfoGraphics()" style="border: none;">Infographics</button>
+
       <div></div>
     </nav>
   </header>
   <div class="header-spacer" id="home"></div>
 
-  <section class="section infographics" id="infographics">
-    <h2>Infographics</h2>
+  <section class="sections infographics" id="infographics">
+    <h2 class="infographics-title">Infographics</h2>
+    <img class="graphic" src="./img/infographics/infographic_anonset.png" alt="">
     <img class="graphic" src="./img/infographics/infographic_dash_blockrewards.png" alt="">
     <img class="graphic" src="./img/infographics/infographic_dapi.png" alt="">
-    <img class="graphic" src="./img/infographics/infographic_dapi.png" alt="">
-    <img class="graphic" src="./img/infographics/infographic_dash_blockrewards.png" alt="">
-  </section>
+    <img class="graphic tmp" src="./img/infographics/infographic_dapi.png" alt="">
 
+
+  </section>
+  <div class="viewer" id="fullpage">
+    <img class="viewer" id="galleryViewer" src="./img/infographics/infographic_dapi.png" alt="">
+    <div class="viewer" id="galleryBG"></div>
+  </div>
+  <!-- onclick="this.style.display='none';" -->
 </body>
 <script src="./design.js?v=1"></script>
 </html>

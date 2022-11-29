@@ -47,32 +47,6 @@ document.addEventListener('click', function ClickOutsideNav(event){
     }
 });
 
-let list = document.querySelectorAll(".grid-item");
-
-console.log(list);
-list.forEach(function(e){
-    e.addEventListener('mouseover', function(){
-        let item = this.children
-        let child = item[0].children
-        let cchild = child[1].children
-        child[0].classList.add('hover')
-        child[1].classList.add('hover')
-        child[2].classList.add('hover')
-        cchild[0].classList.add('hover')
-        cchild[1].classList.add('hover')
-    }, false);
-    e.addEventListener('mouseout', function(){
-        let item = this.children
-        let child = item[0].children
-        let cchild = child[1].children
-        child[0].classList.remove('hover')
-        child[1].classList.remove('hover')
-        child[2].classList.remove('hover')
-        cchild[0].classList.remove('hover')
-        cchild[1].classList.remove('hover')
-    }, false);
-});
-
 function scrollToHome() {
     const anchorHome = document.getElementById("home")
     anchorHome.scrollIntoView({behavior: "smooth"})
@@ -81,3 +55,46 @@ function scrollToInfoGraphics() {
     const anchorAbout = document.getElementById("infographics")
     anchorAbout.scrollIntoView({behavior: "smooth"})
 }
+
+function viewLarger() {}
+const imgs = document.querySelectorAll('.infographics img')
+const fullPage = document.querySelector('#fullpage')
+const galleryViewer = document.querySelector('#galleryViewer')
+const galleryBG = document.querySelector('#galleryBG')
+const viewer = document.querySelectorAll('.viewer')
+
+imgs.forEach(img => {
+    img.addEventListener('click', function() {
+        galleryViewer.src = img.src;
+        fullPage.style.display = 'block';
+        galleryBG.style.display = 'block';
+        galleryViewer.style.display = 'block';
+    });
+});
+
+viewer.forEach(div => {
+    div.addEventListener('click', function() {
+        galleryViewer.style.display = 'none';
+        fullPage.style.display = 'none';
+        galleryBG.style.display = 'none';
+    });
+});
+
+// document.addEventListener('click', function (e){
+
+//     // if(fullPage.contains(e.target) && fullPage.style.display == 'none') {
+//     //     fullPage.style.display = 'block'
+//     //     galleryViewer.style.display = 'block'
+//     //     galleryBG.style.display = 'block'
+//     // } else 
+
+// if (fullPage.contains(e.target) && fullPage.style.display == 'block') {
+//         fullPage.style.display = 'none'
+//         galleryViewer.style.display = 'none'
+//         galleryBG.style.display = 'none'
+//     }
+// })
+
+// if (document.getElementById("elementId").style.display == 'block') { 
+//     alert('this Element is block'); 
+//   }

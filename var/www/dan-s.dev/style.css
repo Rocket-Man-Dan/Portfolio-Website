@@ -682,33 +682,99 @@
 }
 
 /* ⋯⋯⋯ Info Graphics ⋯⋯⋯ */
-.infographics {
-    display: grid;
-    grid-template-columns: auto auto;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin: 0;
-    margin-top: 30vh;
-    padding-bottom: 25vh;
-    scroll-margin: 12vh;
+.sections {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 20px;
 }
 
-.graphic {
-    transition: all ease-in-out 300ms;
+.infographics {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    -webkit-column-width: 33.33333333333333%;
+    -moz-column-width: 33.33333333333333%;
+    column-width: 33.33333333333333%;
+    scroll-margin: 10vh;
+    margin-top: 10vh;
+}
+
+.tmp {
+    opacity: 0;
+}
+
+.graphic, .infographics-title  {
+    /* transition: all ease-in-out 300ms;
     display: flex;
     position: relative;
     margin: 2vh;
-    width: 40vh;
+    width: 30vh;
     transform: scale(1);
+    font-size: 2.7vh; */
+
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    
 }
 
-.graphic:hover {
-    transition: all ease-in-out 300ms;
-    z-index: 999;
-    transform: scale(2);
-    box-shadow: 0vh 0vh 3vh rgb(var(--color-bg-dark));
+.infographics-title {
+    font-size: 5.25vh;
+    margin-top: 0vh;
+    margin-bottom: 2vh;
+    color: rgb(var(--color-green));
 }
+
+@media screen and (max-aspect-ratio: 1200/920) {
+/* 
+    .infographics {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+        margin-top: 30vh;
+        padding-bottom: 25vh;
+        scroll-margin: 12vh;
+        overflow: hidden;
+    }
+
+    .graphic, .infographics-title  {
+        transition: all ease-in-out 300ms;
+        display: flex;
+        position: relative;
+        margin: 2vh;
+        width: 17vh;
+        transform: scale(1);
+        font-size: 2.7vh;
+    } */
+
+    .infographics {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-gap: 20px;
+        -moz-column-gap: 20px;
+        column-gap: 20px;
+        -webkit-column-width: 33.33333333333333%;
+        -moz-column-width: 33.33333333333333%;
+        column-width: 33.33333333333333%;
+        scroll-margin: 10vh;
+    }
+
+    .infographics-title {
+        font-size: 3.5vh;
+        margin-top: 0vh;
+        margin-bottom: 2vh;
+        color: rgb(var(--color-green));
+    }
+
+}
+
 
 /* ∷∷∷∷∷∷∷∷ Footer ∷∷∷∷∷∷∷∷ */
 /* ∷∷∷∷∷∷∷∷ HTML Tags ∷∷∷∷∷∷∷∷ */
@@ -852,9 +918,62 @@ border-radius: 1rem;
     transform: translateX(0vw);
 }
 
+#fullpage {
+    display: none;
+    transition: all ease-in-out 300ms;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(100px);
+}
+
+#galleryViewer {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    height: 95vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(./img/infographics/infographic_dapi.png);
+
+    box-sizing: border-box;
+    background-origin: content-box;
+    background-clip: content-box; /*don't show on the padding*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0vh 0vh 3vh rgba(0, 0, 0, 0.66);
+}
+
+#galleryBG {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 25%;
+    background-image:
+        linear-gradient(to bottom,
+        rgb(var(--color-light-blue)),
+        rgb(var(--color-green)));
+    
+}
+
+
 /* ☏ JS DOM ☏ */
 @media screen and (max-aspect-ratio: 1200/920) {
     .nav-container.scroll.scroll {
         height: 10vh;
+    }
+
+    #galleryViewer {
+        height: unset;
+        width: 95vw;
     }
 }
