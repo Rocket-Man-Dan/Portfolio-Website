@@ -707,6 +707,7 @@
 }
 
 .graphic, .infographics-title  {
+    transition: all ease-in-out 200ms;
     /* transition: all ease-in-out 300ms;
     display: flex;
     position: relative;
@@ -718,7 +719,13 @@
     width: 100%;
     height: auto;
     margin-bottom: 15px;
-    
+    border-radius: var(--border-rad-med);
+}
+
+.graphic:hover {
+    transition: all ease-in-out 200ms;
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .infographics-title {
