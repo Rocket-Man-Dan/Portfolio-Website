@@ -9,15 +9,11 @@ window.onscroll = function () {
     const nav = document.querySelector('.nav-container')
     const head1 = document.querySelector('.heading-1')
     const head3 = document.querySelector('.heading-3')
-    const heroLinks = document.querySelector('.hero-links')
-    const heroLinksScroll = document.querySelector('.hero-links-scroll')
     
     if ( window.pageYOffset > ScrollPointNav && !isScrolledNav ) {
         nav.classList.add("scroll")
         head1.classList.add("scroll")
         head3.classList.add("scroll")
-        heroLinks.classList.add("scroll")
-        heroLinksScroll.classList.add("scroll")
         isScrolledNav = true
     }
 
@@ -26,15 +22,11 @@ window.onscroll = function () {
             nav.classList.add("scroll")
             head1.classList.add("scroll")
             head3.classList.add("scroll")
-            heroLinks.classList.add("scroll")
-            heroLinksScroll.classList.add("scroll")
             isScrolledNav = true
         }   else if ( window.pageYOffset <= ScrollPointNav && isScrolledNav ) {
             nav.classList.remove("scroll")
             head1.classList.remove("scroll")
             head3.classList.remove("scroll")
-            heroLinks.classList.remove("scroll")
-            heroLinksScroll.classList.remove("scroll")
             isScrolledNav = false
             }
     }
