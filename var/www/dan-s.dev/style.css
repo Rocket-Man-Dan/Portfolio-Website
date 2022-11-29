@@ -413,6 +413,10 @@
     .hero-links {
         margin-left: -12vh;
     }
+
+    .hero-links-scroll {
+        display: none;
+    }
 }
 
 /* ∷∷∷∷∷∷∷∷ Sections ∷∷∷∷∷∷∷∷ */
