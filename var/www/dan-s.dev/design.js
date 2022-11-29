@@ -77,15 +77,7 @@ function scrollToHome() {
     const anchorHome = document.getElementById("home")
     anchorHome.scrollIntoView({behavior: "smooth"})
 }
-function scrollToAbout() {
-    const anchorAbout = document.getElementById("about")
-    anchorAbout.scrollIntoView({behavior: "smooth"})
-}
-function scrollToProjects() {
-    const anchorAbout = document.getElementById("projects")
-    anchorAbout.scrollIntoView({behavior: "smooth"})
-}
-function scrollToTech() {
-    const anchorAbout = document.getElementById("tech")
+function scrollToInfoGraphics() {
+    const anchorAbout = document.getElementById("infographics")
     anchorAbout.scrollIntoView({behavior: "smooth"})
 }

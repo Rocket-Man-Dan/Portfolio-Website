@@ -168,6 +168,7 @@
     }
 
     .btn.mobile {
+        width: 12vh;
         color: rgb(var(--color-text-dark));
     }
 
@@ -678,6 +679,35 @@
         width: 10vh;
     }
 
+}
+
+/* ⋯⋯⋯ Info Graphics ⋯⋯⋯ */
+.infographics {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    margin-top: 30vh;
+    padding-bottom: 25vh;
+    scroll-margin: 12vh;
+}
+
+.graphic {
+    transition: all ease-in-out 300ms;
+    display: flex;
+    position: relative;
+    margin: 2vh;
+    width: 40vh;
+    transform: scale(1);
+}
+
+.graphic:hover {
+    transition: all ease-in-out 300ms;
+    z-index: 999;
+    transform: scale(2);
+    box-shadow: 0vh 0vh 3vh rgb(var(--color-bg-dark));
 }
 
 /* ∷∷∷∷∷∷∷∷ Footer ∷∷∷∷∷∷∷∷ */
