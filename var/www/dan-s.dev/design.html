@@ -1,58 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="icon" type="image/x-icon" href="./img/portfolio_favicon.ico">
-  <title>Dan S - Graphic Design</title>
-</head>
-<body>
-  <input type="checkbox" id="mobile-nav" style="display: none; position: fixed; z-index: 999;">
-  <header class="header">
-    <nav class="nav-container" id="nav-container">
-      <div class="home">
-        <button class="btn" onclick="scrollToHome()" style="border: none;">Home</button>
-        <button class="btn" onclick="location.href='https://dan-s.dev';" style="border: none;">Web Design</button>
-      </div>
-      <div class="btn-container desktop">
-        <button class="btn" onclick="scrollToInfoGraphics()" style="border: none;">Infographics</button>
-        <!-- <button class="btn" onclick="scrollToProjects()" style="border: none;">Projects</button>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="icon" type="image/x-icon" href="./img/portfolio_favicon.ico" />
+		<title>Dan S - Graphic Design</title>
+	</head>
+	<body>
+		<input
+			type="checkbox"
+			id="mobile-nav"
+			style="display: none; position: fixed; z-index: 999"
+		/>
+		<header class="header">
+			<nav class="nav-container" id="nav-container">
+				<div class="home">
+					<button class="btn" onclick="scrollToHome()" style="border: none">
+						Home
+					</button>
+					<button
+						class="btn"
+						onclick="location.href='https://dan-s.dev';"
+						style="border: none"
+					>
+						Web Design
+					</button>
+				</div>
+				<div class="btn-container desktop">
+					<button
+						class="btn"
+						onclick="scrollToGraphicDesign()"
+						style="border: none"
+					>
+						Graphic Design
+					</button>
+					<button
+						class="btn"
+						onclick="scrollToMotionGraphics()"
+						style="border: none"
+					>
+						Motion Graphics
+					</button>
+					<button
+						class="btn"
+						onclick="scrollToInfoGraphics()"
+						style="border: none"
+					>
+						Infographics
+					</button>
+					<!-- <button class="btn" onclick="scrollToProjects()" style="border: none;">Projects</button>
         <button class="btn" onclick="scrollToTech()" style="border: none;">Technologies</button> -->
-      </div>
-      <section class="hero" id="hero">
-        <h1 class="heading-1">Dan S</h1>
-        <h3 class="heading-3">Graphic 🎨 Design</h3>
-      </section>
-    </nav>
-    <div class="btn-burger-container">
-      <label class="btn-burger" for="mobile-nav"></label>
-    </div>
-    <nav class="mobile-nav-container">
-      <button class="btn mobile" onclick="scrollToHome()" style="border: none;">Home</button>
-      <button class="btn mobile" onclick="location.href='https://dan-s.dev';" style="border: none;">Web<br> Design</button>
-      <button class="btn mobile" onclick="scrollToInfoGraphics()" style="border: none;">Infographics</button>
+				</div>
+				<section class="hero" id="hero">
+					<h1 class="heading-1">Dan S</h1>
+					<h3 class="heading-3">Graphic 🎨 Design</h3>
+				</section>
+			</nav>
+			<div class="btn-burger-container">
+				<label class="btn-burger" for="mobile-nav"></label>
+			</div>
+			<nav class="mobile-nav-container">
+				<button
+					class="btn mobile"
+					onclick="scrollToHome()"
+					style="border: none"
+				>
+					Home
+				</button>
+				<button
+					class="btn mobile"
+					onclick="location.href='https://dan-s.dev';"
+					style="border: none"
+				>
+					Web<br />
+					Design
+				</button>
+				<button
+					class="btn mobile"
+					onclick="scrollToGraphicDesign()"
+					style="border: none"
+				>
+					Graphic <br />
+					Design
+				</button>
+				<button
+					class="btn mobile"
+					onclick="scrollToMotionGraphics()"
+					style="border: none"
+				>
+					Motion <br />
+					Graphics
+				</button>
+				<button
+					class="btn mobile"
+					onclick="scrollToInfoGraphics()"
+					style="border: none"
+				>
+					Infographics
+				</button>
 
-      <div></div>
-    </nav>
-  </header>
-  <div class="header-spacer" id="home"></div>
+				<div></div>
+			</nav>
+		</header>
+		<div class="header-spacer" id="home"></div>
 
-  <section class="sections infographics" id="infographics">
-    <h2 class="infographics-title">Infographics</h2>
-    <img class="graphic" src="./img/infographics/infographic_anonset.png" alt="">
-    <img class="graphic" src="./img/infographics/infographic_dash_blockrewards.png" alt="">
-    <img class="graphic" src="./img/infographics/infographic_tps_blocksize_comparison.png" alt="">
-    <img class="graphic" src="./img/infographics/infographic_dapi.png" alt="">
+		<div class="graphic grid-title">
+			<div class="anchor" id="GraphicDesign"></div>
+			<h2 class="infographics-title">Graphic Design</h2>
+		</div>
+		<section class="sections tiles">
+			<img
+				class="graphic"
+				src="./img/logos/birchwood_security_group/logo_BSG_color.svg"
+				alt=""
+			/>
+			<img
+				class="graphic"
+				src="./img/logos/birchwood_security_group/logo_BSG_black-white.svg"
+				alt=""
+			/>
+			<img
+				class="graphic"
+				src="./img/logos/birchwood_security_group/business-card_front.png"
+				alt=""
+			/>
+			<img
+				class="graphic"
+				src="./img/logos/birchwood_security_group/business-card_back.png"
+				alt=""
+			/>
+			<img class="graphic" src="./img/logos/hush/logo_HUSH_market.svg" alt="" />
+			<img
+				class="graphic"
+				src="./img/logos/hush/logo_HUSH_wordmark_combo.png"
+				alt=""
+			/>
+			<img
+				class="graphic"
+				src="./img/logos/hush/banner_twitter_HUSH.png"
+				alt=""
+			/>
+			<img
+				class="graphic"
+				src="./img/logos/digital_cash_network/logo_descentr_color_alpha.svg"
+				alt=""
+			/>
+			<img
+				class="graphic"
+				src="./img/graphics/icon_design/elr/icon_design_elr.png"
+				alt=""
+			/>
+		</section>
+		<div class="grid-title">
+			<div class="anchor" id="MotionGraphics"></div>
+			<h2 class="infographics-title">Motion Graphics</h2>
+		</div>
+		<section class="sections tiles">
+			<div class="graphic no-select">
+				<img
+					class="graphic no-select"
+					src="./img/graphics/yt_thumbnails/youtube_thumbnail.png"
+					alt=""
+				/>
+				<a class="tile-link" href="https://www.youtube.com/watch?v=TzfhcZBBd1c&"
+					>Link To Explainer Video</a
+				>
+			</div>
+			<img
+				class="graphic gif"
+				src="./video/animations/dash/DASH_NFT.gif"
+				alt=""
+			/>
+			<img
+				class="graphic gif"
+				src="./video/animations/digital_cash_network/3D-Mic-NFT.gif"
+				alt=""
+			/>
 
-
-  </section>
-  <div class="viewer" id="fullpage">
-    <img class="viewer" id="galleryViewer" src="./img/infographics/infographic_dapi.png" alt="">
-    <div class="viewer" id="galleryBG"></div>
-  </div>
-  <!-- onclick="this.style.display='none';" -->
-</body>
-<script src="./design.js?v=1"></script>
+			<video
+				class="graphic"
+				autoplay
+				loop
+				src="./video/animations/dash/Dash D Intro.mp4"
+			></video>
+			<video
+				class="graphic"
+				autoplay
+				loop
+				src="./video/animations/hush/Silent Dragon Lite Loading Loop.mp4"
+			></video>
+		</section>
+		<div class="grid-title">
+			<div class="anchor" id="Infographics"></div>
+			<h2 class="infographics-title">Info Graphics</h2>
+		</div>
+		<section class="sections tiles">
+			<img
+				class="graphic"
+				src="./img/infographics/infographic_anonset.png"
+				alt=""
+			/>
+			<img
+				class="graphic"
+				src="./img/infographics/infographic_dash_blockrewards.png"
+				alt=""
+			/>
+			<img
+				class="graphic"
+				src="./img/infographics/infographic_tps_blocksize_comparison.png"
+				alt=""
+			/>
+			<img
+				class="graphic"
+				src="./img/infographics/infographic_dapi.png"
+				alt=""
+			/>
+			<img
+				class="graphic"
+				src="./img/infographics/infographic_dapi.png"
+				alt=""
+			/>
+		</section>
+		<div class="viewer" id="fullpage">
+			<img
+				class="viewer"
+				id="galleryViewer"
+				src="./img/infographics/infographic_dapi.png"
+				alt=""
+			/>
+			<div class="viewer" id="galleryBG"></div>
+		</div>
+		<!-- onclick="this.style.display='none';" -->
+	</body>
+	<script src="./design.js?v=1"></script>
 </html>
