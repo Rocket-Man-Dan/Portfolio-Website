@@ -1,151 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="icon" type="image/x-icon" href="./img/portfolio_favicon.ico">
-  <title>Dan S - Web Design</title>
-</head>
-<body>
-  <input type="checkbox" id="mobile-nav" style="display: none; position: fixed; z-index: 999;">
-  <header class="header">
-    <nav class="nav-container" id="nav-container">
-      <div class="home">
-        <button class="btn" onclick="scrollToHome()" style="border: none;">Home</button>
-        <button class="btn" onclick="location.href='https://design.dan-s.dev';" style="border: none;">Graphic Design</button>
-      </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="icon" type="image/x-icon" href="./img/portfolio_favicon.ico" />
+		<title>Dan S - Web Design</title>
+	</head>
+	<body>
+		<input
+			type="checkbox"
+			id="mobile-nav"
+			style="display: none; position: fixed; z-index: 999"
+		/>
+		<header class="header">
+			<nav class="nav-container" id="nav-container">
+				<div class="home">
+					<button class="btn" onclick="scrollToHome()" style="border: none">
+						Home
+					</button>
+					<button
+						class="btn"
+						onclick="location.href='https://design.dan-s.dev';"
+						style="border: none"
+					>
+						Graphic Design
+					</button>
+				</div>
 
-      <div class="btn-container desktop">
-        <button class="btn" onclick="scrollToAbout()" style="border: none;">About Me</button>
-        <button class="btn" onclick="scrollToProjects()" style="border: none;">Projects</button>
-        <button class="btn" onclick="scrollToTech()" style="border: none;">Technologies</button>
-      </div>
-      <section class="hero" id="hero">
-        <h1 class="heading-1">Dan S</h1>
-        <h3 class="heading-3">Designer 💻 Developer</h3>
-      </section>
-    </nav>
-    <div class="hero-links">
-      <a href="https://www.linkedin.com/in/dan-sessoms-11731a141/"></a>
-      <a href="https://github.com/Rocket-Man-Dan"></a>
-      <a href=""></a>
-    </div>
-    <div class="hero-links-scroll">
-      <a href="https://www.linkedin.com/in/dan-sessoms-11731a141/"></a>
-      <a href="https://github.com/Rocket-Man-Dan"></a>
-      <a href=""></a>
-    </div>
-    <div class="btn-burger-container">
-      <label class="btn-burger" for="mobile-nav"></label>
-    </div>
-    <nav class="mobile-nav-container">
-      <button class="btn mobile" onclick="scrollToHome()" style="border: none;">Home</button>
-      <button class="btn mobile" onclick="location.href='https://design.dan-s.dev';" style="border: none;">Graphic<br> Design</button>
-      <button class="btn mobile" onclick="scrollToAbout()" style="border: none;">About Me</button>
-      <button class="btn mobile" onclick="scrollToProjects()" style="border: none;" >Projects</button>
-      <button class="btn mobile" onclick="scrollToTech()" style="border: none;">Tech</button>
-      <div></div>
-    </nav>
-  </header>
-  <div class="header-spacer" id="home"></div>
-  <section class="section about" id="about">
-    <h2>About Me</h2>
-    <article>
-        <p>
-            Hi, my name’s Dan, <br> 
-            I’m a developer with a focus on
-            front end development and UI/UX design.
-        </p>
-        <p>
-            I primarily work with HTML, CSS, JavaScript, 
-            and The Adobe Suite. <br> <br>
-            I have some experience with backend development 
-            setting up webservers with NGINX, Redis, and Linux as well.
-        </p>
-        <p>
-            My experience prior to web development was in
-            graphic design, motion graphics, game design, 
-            and video editing.
-        </p>
-    </article>
-  </section>
+				<div class="btn-container desktop">
+					<button class="btn" onclick="scrollToAbout()" style="border: none">
+						About Me
+					</button>
+					<button class="btn" onclick="scrollToProjects()" style="border: none">
+						Projects
+					</button>
+					<button class="btn" onclick="scrollToTech()" style="border: none">
+						Technologies
+					</button>
+				</div>
+				<section class="hero" id="hero">
+					<h1 class="heading-1">Dan S</h1>
+					<h3 class="heading-3">Designer 💻 Developer</h3>
+				</section>
+			</nav>
+			<div class="hero-links">
+				<a href="https://www.linkedin.com/in/dan-sessoms-11731a141/"></a>
+				<a href="https://github.com/Rocket-Man-Dan"></a>
+				<a href=""></a>
+			</div>
+			<div class="hero-links-scroll">
+				<a href="https://www.linkedin.com/in/dan-sessoms-11731a141/"></a>
+				<a href="https://github.com/Rocket-Man-Dan"></a>
+				<a href=""></a>
+			</div>
+			<div class="btn-burger-container">
+				<label class="btn-burger" for="mobile-nav"></label>
+			</div>
+			<nav class="mobile-nav-container">
+				<button
+					class="btn mobile"
+					onclick="scrollToHome()"
+					style="border: none"
+				>
+					Home
+				</button>
 
-  <section class="section projects" id="projects">
-    <h2>Projects</h2>
-    <article>
-        <p>
-          Work and Personal projects.
-        </p>
-    </article>
-    <div class="project-grid">
-      <div class="grid-item">
-        <div class="screenshot">
-          <div class="screenshot-color"></div>
-          <div class="projects-popup">
-            <h4 class="project-title">Crypto Currency Explorer</h4>
-            <span class="project-desc">The focus of this project was an explorer 
-                                        and website without any javascript. 
-                                        It was made using Redis and Perl, 
-                                        hosted on a NGINX webserver.</span>
-          </div>
-                <img class="screenshot-image" src="./img/screenshots/scrn_explorer_1.png" alt="">
-        </div>
-        
-        <a href="https://explorer.dragonx.is" class="live-btn" style="text-decoration: none;">
-          <img class="projects-icon" src="./img/icons/icon_eye.svg" alt="">
-          <h3 >Live Version</h3>
-        </a>
-        <a href="https://git.hush.is/dan_s/siona-DragonX.git" class="code-btn" style="text-decoration: none;">
-          <img class="projects-icon" src="./img/icons/icon_git_dark.svg" alt="">
-          <h3 style="color: inherit;">View code</h3>
-        </a>
-      </div>
-      <div class="grid-item">
-        <div class="screenshot">
-          <div class="screenshot-color"></div>
-          <div class="projects-popup">
-            <h4 class="project-title">No Js Website</h4>
-            <span class="project-desc">Privacy cryptocurrency website, 
-                                        all animations done in pure CSS, 
-                                        no javascript was used.</span>
-          </div>
-                <img class="screenshot-image" src="./img/screenshots/scrn_hush_website.png" alt="">
-        </div>
-        
-        <a href="https://rocket-man-dan.github.io/test.hush.is/" style="text-decoration: none;" class="live-btn">
-          <img class="projects-icon" src="./img/icons/icon_eye.svg" alt="">
-          <h3 >Live Version</h3>
-        </a>
-        <a href="https://github.com/Rocket-Man-Dan/test.hush.is" style="text-decoration: none;" class="code-btn">
-          <img class="projects-icon" src="./img/icons/icon_git_dark.svg" alt="">
-          <h3 style="color: inherit;">View code</h3>
-        </a>
-      </div>
-    </div>
-  </section>
-  <section class="section tech" id="tech">
-    <h2>Technologies</h2>
-    <article>
-        <p>
-          Software and languages I am familiar with.
-        </p>
-    </article>
-    <div class="tech-container" >
-      <img src="img/icons/SVG/logo_HTML.svg" alt="">
-      <img src="img/icons/SVG/logo_CSS.svg" alt="">
-      <img src="img/icons/SVG/logo_JavaScript.svg" alt="">
-      <!-- <img src="img/icons/SVG/logo_Sass.svg" alt=""> -->
-      <!-- <img src="img/icons/SVG/logo_VueJS.svg" alt=""> -->
-      <img src="img/icons/SVG/logo_Git.svg" alt="">
-      <img src="img/icons/SVG/logo_NGINX.svg" alt="">
-      <img src="img/icons/SVG/logo_Redis.svg" alt="">
-      <img src="img/icons/SVG/logo_AdobeCC.svg" alt="">
-    </div>
-  </section>
+				<button
+					class="btn mobile"
+					onclick="scrollToAbout()"
+					style="border: none"
+				>
+					About Me
+				</button>
+				<button
+					class="btn mobile"
+					onclick="scrollToProjects()"
+					style="border: none"
+				>
+					Projects
+				</button>
+				<button
+					class="btn mobile"
+					onclick="scrollToTech()"
+					style="border: none"
+				>
+					Tech
+				</button>
+				<button
+					class="btn mobile"
+					onclick="location.href='https://design.dan-s.dev';"
+					style="border: none; background-color: rgb(var(--color-light-blue))"
+				>
+					Graphic<br />
+					Design
+				</button>
+				<div></div>
+			</nav>
+		</header>
+		<div class="header-spacer" id="home"></div>
+		<section class="section about" id="about">
+			<h2>About Me</h2>
+			<article>
+				<p>
+					Hi, my name’s Dan, <br />
+					I’m a developer with a focus on front end development and UI/UX
+					design.
+				</p>
+				<p>
+					I primarily work with HTML, CSS, JavaScript, and The Adobe Suite.
+					<br />
+					<br />
+					I have some experience with backend development setting up webservers
+					with NGINX, Redis, and Linux as well.
+				</p>
+				<p>
+					My experience prior to web development was in graphic design, motion
+					graphics, game design, and video editing.
+				</p>
+			</article>
+		</section>
 
+		<section class="section projects" id="projects">
+			<h2>Projects</h2>
+			<article>
+				<p>Work and Personal projects.</p>
+			</article>
+			<div class="project-grid">
+				<div class="grid-item">
+					<div class="screenshot">
+						<div class="screenshot-color"></div>
+						<div class="projects-popup">
+							<h4 class="project-title">Crypto Currency Explorer</h4>
+							<span class="project-desc"
+								>The focus of this project was an explorer and website without
+								any javascript. It was made using Redis and Perl, hosted on a
+								NGINX webserver.</span
+							>
+						</div>
+						<img
+							class="screenshot-image"
+							src="./img/screenshots/scrn_explorer_1.png"
+							alt=""
+						/>
+					</div>
 
-</body>
-<script src="./main.js?v=1"></script>
+					<a
+						href="https://explorer.dragonx.is"
+						class="live-btn"
+						style="text-decoration: none"
+					>
+						<img class="projects-icon" src="./img/icons/icon_eye.svg" alt="" />
+						<h3>Live Version</h3>
+					</a>
+					<a
+						href="https://git.hush.is/dan_s/siona-DragonX.git"
+						class="code-btn"
+						style="text-decoration: none"
+					>
+						<img
+							class="projects-icon"
+							src="./img/icons/icon_git_dark.svg"
+							alt=""
+						/>
+						<h3 style="color: inherit">View code</h3>
+					</a>
+				</div>
+				<div class="grid-item">
+					<div class="screenshot">
+						<div class="screenshot-color"></div>
+						<div class="projects-popup">
+							<h4 class="project-title">No Js Website</h4>
+							<span class="project-desc"
+								>Privacy cryptocurrency website, all animations done in pure
+								CSS, no javascript was used.</span
+							>
+						</div>
+						<img
+							class="screenshot-image"
+							src="./img/screenshots/scrn_hush_website.png"
+							alt=""
+						/>
+					</div>
+
+					<a
+						href="https://rocket-man-dan.github.io/test.hush.is/"
+						style="text-decoration: none"
+						class="live-btn"
+					>
+						<img class="projects-icon" src="./img/icons/icon_eye.svg" alt="" />
+						<h3>Live Version</h3>
+					</a>
+					<a
+						href="https://github.com/Rocket-Man-Dan/test.hush.is"
+						style="text-decoration: none"
+						class="code-btn"
+					>
+						<img
+							class="projects-icon"
+							src="./img/icons/icon_git_dark.svg"
+							alt=""
+						/>
+						<h3 style="color: inherit">View code</h3>
+					</a>
+				</div>
+			</div>
+		</section>
+		<section class="section tech" id="tech">
+			<h2>Technologies</h2>
+			<article>
+				<p>Software and languages I am familiar with.</p>
+			</article>
+			<div class="tech-container">
+				<img src="img/icons/SVG/logo_HTML.svg" alt="" />
+				<img src="img/icons/SVG/logo_CSS.svg" alt="" />
+				<img src="img/icons/SVG/logo_JavaScript.svg" alt="" />
+				<!-- <img src="img/icons/SVG/logo_Sass.svg" alt=""> -->
+				<!-- <img src="img/icons/SVG/logo_VueJS.svg" alt=""> -->
+				<img src="img/icons/SVG/logo_Git.svg" alt="" />
+				<img src="img/icons/SVG/logo_NGINX.svg" alt="" />
+				<img src="img/icons/SVG/logo_Redis.svg" alt="" />
+				<img src="img/icons/SVG/logo_AdobeCC.svg" alt="" />
+			</div>
+		</section>
+	</body>
+	<script src="./main.js?v=1"></script>
 </html>
